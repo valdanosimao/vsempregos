@@ -1,6 +1,6 @@
 /* reset*/
 * {
-   margin: 2px; padding:0; font-size: 100%; box-sizing: border-box; 
+   margin: 0px; padding:0; font-size: 100%; box-sizing: border-box; 
 }
 
 nav,li {
@@ -20,15 +20,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items:center ;    
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     position: absolute;    
-    padding: 20px 50px;
+    padding: 20px 20px;
     background-color:#005f88c5 ;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header img {
-    width: 200px;   
+    width: 200px;  
     border-width: 5px;
     border-radius: 10px;
     opacity: 0.9;
@@ -56,60 +57,93 @@ header li  {
    margin: 0 15px ;
 }
 
-header li:first-child {
-    margin-left: 0;
-}
-
-header li:last-child {
-    margin-right: 0;
-}
 
 @media (max-width:700px) {
  header {flex-direction: column;}
  header img {margin-bottom: 15px;}
  header li a {font-size: 13px;margin: 0px;}
- header {width: 450px;}
+ header {width: 100%;}
 }
 
+/*gap entre o cabeçalho e o corpo do site*/
 .gap {
     display: flex;        
     margin-top: 85px;
-   
+    width: 100%;
+    max-width: 1200px;  
 }
 
-.texto-corpo {
+/*corpo do site onde está a imagem do banner*/
+.meio {
 display: flex;
-justify-content: center;
-align-items: flex-end;
+justify-content: center;   
 }
 
 main {
-    margin-top: 35px;
-    justify-content: flex-end;
-    align-items: center;
+    margin-top: 35px;  
     display: flex;
-    width: 1200px;
-    height: 500px;
-    background-image:url(../imagens/banner.jpg)
-    
+    width: 100%;
+    max-width: 1200px;
+              
 }
 
-main h1 {
-    color: #005f88c5;
-    font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-right: 20px;
-    
+#banner img {   
+    display: flex; 
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;   
 }
 
 @media (max-width:700px) {
     .main h1 {font-size: 12px;}
     .main {font-size: 20px;}
-    .gap {margin-top: 120px;width: auto;height: auto;}
-  
-  
+    .gap {margin-top: 109px;}
 }
 
+/*Seção dos links*/
+.notices  {
+    display: flex;
+    justify-content: center; 
+   
+}
+
+.notices div, .box-notices {
+    display: flex;
+    justify-content: space-around;
+    background-color: #005f88c5 ;
+    width: 100%;
+    height: 150px;
+    max-width: 1200px;      
+}
+
+
+#text1 {    
+    color: #ffffff;
+    font-size: 10px;
+    margin: 12px;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+div ul li a{    
+    color: #b9b9b9;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    opacity: 0.9;
+      
+}
+
+div ul li  {
+    text-align: center;  
+}
+
+div ul li a:hover {
+    opacity: 1;
+}
+
+/*seção onde fica a frase motivacional*/
 .frase {
     justify-content: center;
     display: flex;
@@ -120,7 +154,8 @@ main h1 {
     align-items: center;
     justify-content: center;
     background-color: #DED6CC;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 150px;
 }
 
@@ -133,6 +168,7 @@ main h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
 }
 
+/*seção do rodape*/
 .rodape{
     display: flex;
     align-items: center;
@@ -142,7 +178,8 @@ main h1 {
 .rodape div{
 display: flex;
 margin-top: 1px;
-width: 1200px;
+width: 100%;
+max-width: 1200px;
 height: 30px;
 background-color: #005f88c5;
 justify-content: center;
@@ -156,3 +193,6 @@ color: #ffffff;
 font-size: 12px;
 }
 
+@media (max-width:700px) {
+    .text-motiv p{font-size: 12px;}
+}
