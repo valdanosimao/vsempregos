@@ -1,0 +1,153 @@
+/* reset*/
+* {
+   margin: 2px; padding:0; font-size: 100%; box-sizing: border-box; 
+}
+
+nav,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; cursor:pointer; opacity: 0.9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+ 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;    
+    width: 1200px;
+    position: absolute;    
+    padding: 20px 50px;
+    background-color:#005f88c5 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header img {
+    width: 200px;   
+    border-width: 5px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+header img:hover {
+    opacity: 1;
+}
+
+header nav {
+    display: flex;
+}
+
+header li a {
+    color: #ffffff
+}
+
+header li a:hover {
+    
+  opacity: 1; 
+    
+}
+
+header li  {
+   margin: 0 15px ;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width:700px) {
+ header {flex-direction: column;}
+ header img {margin-bottom: 15px;}
+ header li a {font-size: 13px;margin: 0px;}
+ header {width: 450px;}
+}
+
+.gap {
+    display: flex;        
+    margin-top: 120px;
+}
+
+.texto-corpo {
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+main {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    background-image:url(../imagens/banner.jpg)
+    
+}
+
+main h1 {
+    color: #005f88c5;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 20px;
+    
+}
+
+@media (max-width:700px) {
+    .main h1 {font-size: 12px;}
+    .main {font-size: 20px;}
+}
+
+.frase {
+    justify-content: center;
+    display: flex;
+}
+
+.text-motiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DED6CC;
+    width: 1200px;
+    height: 150px;
+}
+
+ p {
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    color: #1c5168;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape div{
+display: flex;
+margin-top: 1px;
+width: 1200px;
+height: 30px;
+background-color: #005f88c5;
+justify-content: center;
+}
+
+.rodape div h3 {
+display: flex;
+text-align: center;
+align-items: center;
+color: #ffffff;
+font-size: 12px;
+}
+
