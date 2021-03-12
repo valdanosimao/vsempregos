@@ -134,8 +134,9 @@ main {
 }
 
 @media (max-width:700px) {
-.down-line {width: 400px;}
-.corpo {width: 400px;}
+.down-line {width: 350px;}
+.corpo {width: 350px; justify-content: center;}
 .vaga h2 {font-size: 15px;margin-left: 15px; margin-right: 15px;}
 .vaga p {font-size: 13px;margin-left: 15px; margin-right: 15px;}
 }
+
