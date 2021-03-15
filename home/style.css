@@ -169,6 +169,23 @@ div ul li a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
 }
 
+
+.ligia {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.ligia-banner {
+    display: flex;
+    width:100%;
+    max-width: 1200px;
+}
+
+@media (max-width:700px) {
+    .ligia-banner img{width: 100%;height: 80px;}
+}
+
 /*seção do rodape*/
 .rodape{
     display: flex;
@@ -181,7 +198,7 @@ display: flex;
 margin-top: 1px;
 width: 100%;
 max-width: 1200px;
-height: 30px;
+height: 15px;
 background-color: #005f88c5;
 justify-content: center;
 }
@@ -191,9 +208,9 @@ display: flex;
 text-align: center;
 align-items: center;
 color: #ffffff;
-font-size: 12px;
+font-size: 9px;
 }
 
 @media (max-width:700px) {
-    .text-motiv p{font-size: 12px;}
+    .text-motiv p{font-size: 10px;}
 }
