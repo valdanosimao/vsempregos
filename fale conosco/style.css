@@ -80,6 +80,16 @@
      margin-top: 80px;
  }
 
+ .anuncie {
+    display: flex;
+    justify-content: center;
+ }
+
+ .anuncie div img {
+     width: 100%;
+     max-width: 1200px;
+ }
+
  .corpo {
     
    display: flex;
