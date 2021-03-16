@@ -128,10 +128,10 @@
 }
 
 hr {
-    color: #005f88af;
+    color: #40bcdb;
     width: 100%;
     max-width: 1200px;
-    border: 2px solid #005f88af;
+    border: 1px solid #40bcdb;
 }
 
 .ligia {
@@ -146,7 +146,7 @@ div img {
 
 @media (max-width:700px) {
     .gap {margin-top: 143px; width: 100%px;}
-    div h1 {font-size:20px;}
+    div h1 {font-size:15px;}
     div p {font-size: 13px;}
     div h3 {font-size:13px;}
     .corpo {height: 300px;}

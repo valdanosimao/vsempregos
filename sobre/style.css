@@ -84,7 +84,8 @@
  .corpo {
     
    display: flex;
-   justify-content: center;  
+   justify-content: center;
+  
        
  }
 
@@ -132,14 +133,44 @@ h1 {
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: justify; 
- }       
+ }
+ 
+ .ajude {
+     display: flex;
+     justify-content: center;
+     
+ }
+
+ .ajude div {
+     width: 100%;
+     max-width: 1200px;
+     background-color: #dd91058e;
+     height: 70px;
+     align-items: center;
+ }
+
+ .ajude div h3 {
+     color: #40bcdb;
+     font-size: 13px;
+     text-align: center;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     margin-top: 10px;
+ }
+
+ .ajude div p {
+    color: #40bcdb;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 10px;
+}
 
 @media (max-width:700px) {
     .gap {margin-top: 90px;}
     div {flex-direction: column;}
-    h1 {margin-top: 10px;}
-    p {font-size: 12px;margin: 2px;}  
-    
+    h1 {margin-top: 10px; font-size: 13px;}
+    div p {font-size: 12px;margin-left: 10px; margin-right: 10px;} 
+    .ajude h3 {font: 10px;}
 }
 
 /*seção do rodape*/
