@@ -144,21 +144,21 @@ h1 {
  .ajude div {
      width: 100%;
      max-width: 1200px;
-     background-color: #dd91058e;
+     background-color: #DED6CC;
      height: 70px;
      align-items: center;
  }
 
  .ajude div h3 {
-     color: #40bcdb;
+     color: #1c5168;
      font-size: 13px;
      text-align: center;
-     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      margin-top: 10px;
  }
 
  .ajude div p {
-    color: #40bcdb;
+    color: #1c5168;
     font-size: 12px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
