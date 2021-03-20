@@ -61,9 +61,16 @@
  @media (max-width:700px) {
   header {flex-direction: column;}
   header img {margin-bottom: 15px;}
-  header li a {font-size: 13px;margin: 0px;}
+  header li a {font-size: 13px;flex: 1;}
   header {width: 100%;}
  }
+
+ @media (max-width:350px) {
+    header {flex-direction: column;}
+    header img {margin-bottom: 12px;}
+    header li a {font-size: 10px;flex: 1;}
+    header {width: 100%;}
+}
  
  /*gap entre o cabeçalho e o corpo do site*/
  .gap {
@@ -78,7 +85,7 @@
     justify-content: center;
  }
 
- .anuncie div img {
+div img {
      width: 100%;
      max-width: 1200px;
  }
@@ -96,7 +103,7 @@
      background-color: rgba(175, 194, 245, 0.096);
      width: 100%;
      max-width: 1200px;
-     height: 360px;
+     height: 330px;
      align-items: center;
      justify-content: flex-start;
      background-color: #ffffff;
@@ -107,7 +114,7 @@
      color: #005f88af;
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      text-align: center;
-     font-size: 30px;
+     font-size: 20px;
      margin-top: 20px;
  }
 
@@ -115,7 +122,7 @@
     color: #03293aaf;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
  }
 
@@ -123,7 +130,7 @@
     color: #005f88af;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -139,15 +146,25 @@ hr {
     justify-content: center;
 }
 
-div img {
+.anuncie div img {
     width: 100%;
     max-width: 1200px;
 }
 
 @media (max-width:700px) {
     .gap {margin-top: 143px; width: 100%px;}
-    div h1 {font-size:15px;}
-    div p {font-size: 13px;}
-    div h3 {font-size:13px;}
+    div h1 {font-size:12px;}
+    div p {font-size: 12px;}
+    div h3 {font-size:12px;}
     .corpo {height: 300px;}
+     div img {width: 100%;max-width: 1200px;}
+} 
+
+@media (max-width:350px) {
+    .gap {margin-top: 140px; width: 100%px;}
+    div h1 {font-size:12px;}
+    div p {font-size: 10px;}
+    div h3 {font-size:10px;}
+    .corpo {height: 300px;}
+    div img {width: 100%;max-width: 1200px;}
 } 
